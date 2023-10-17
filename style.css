@@ -1,0 +1,103 @@
+/* ---------- UNIVERSAL CSS ---------- */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 95vh;
+    width: 100%;
+}
+
+
+/* ---------- NAV BAR CSS ---------- */
+nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+nav span{
+    position: absolute;
+    left: 3rem;
+}
+
+
+/* ---------- CONTAINER CSS ---------- */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 94vh;
+    background-color: aqua;
+}
+
+
+/* ---------- CONTAINER BOXGAME CSS ---------- */
+.container .boxGame{
+    width: 60%;
+    height: 80vh;
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    place-content: center;
+}
+
+
+/* ---------- CONTAINER BOXINFO CSS ---------- */
+.container .boxInfo{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 80vh;
+    background-color: lightcoral;
+    gap: 2rem;
+}
+
+
+/* ---------- CONTAINER BOX CSS ---------- */
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 2px solid black;
+    font-size: 10vw;
+    cursor: pointer;
+}
+.boxGame .box:hover{
+    background-color: lightgreen;
+    transition: 0.5s;
+}
+
+
+
+/* ---------- BOX BORDERS CLASSES CSS ---------- */
+.bt-0{
+    border-top: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+
+
+
+/* ---------- BUTTON RESET CSS ---------- */
+.reset{
+    padding: 0.5rem 0.8rem;
+    background-color: aqua;
+    border:  none;
+    border-radius: 10rem;
+    cursor: pointer;
+}
